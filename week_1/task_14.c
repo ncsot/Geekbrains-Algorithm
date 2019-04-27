@@ -13,7 +13,6 @@ int main(int argc, char const *argv[])
 		unsigned long long int checkNumberPow = checkNumber * checkNumber;
 		int flag = 0;
 		while(checkNumber > 0) {
-			/*printf("call func. checkNumber = %llu\n", checkNumber);*/
 			if(checkNumber%10 != checkNumberPow%10) {
 				flag = 1;
 				break;
