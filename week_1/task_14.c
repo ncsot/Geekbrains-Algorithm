@@ -2,7 +2,6 @@
 #include <math.h>
 #include <limits.h>
 
-
 int main(int argc, char const *argv[])
 {
 	unsigned long long int userNumber;
