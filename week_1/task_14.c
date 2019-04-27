@@ -5,7 +5,7 @@
 int main(int argc, char const *argv[])
 {
 	unsigned long long int userNumber;
-
+	long int cntAutomorph = 0;
 	
 	int isAutomorphic(unsigned long long int checkNumber) 
 	{
@@ -27,9 +27,12 @@ int main(int argc, char const *argv[])
 	while(userNumber > 0) {
 		if (isAutomorphic(userNumber) == 0)
 		 {
-			printf("automorph numb = %llu\n", userNumber);
+			printf("automorph number = %llu\n", userNumber);
+			cntAutomorph++;
+
 		}
 		userNumber = userNumber - 1;
 	}
+	printf("Total number= %ld\n", cntAutomorph);
 	return 0;
 }
